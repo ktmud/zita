@@ -1,4 +1,4 @@
-# 🕵️‍♀️ Zita - Zillion-scale Image Tagger
+# 🕵️‍♀️ Zita - Zillion Image Tagging App
 
 > Build your own image classification service within a day.
 
