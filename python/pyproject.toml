@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "zita"
-version = "0.0.1"
+version = "0.0.1dev"
 description = "Zillion Image Tagging App"
 authors = ["Jesse Yang <hello@yjc.me>"]
 license = "Apache-2.0"
@@ -8,12 +8,12 @@ repository = "https://github.com/ktmud/zita"
 
 [tool.poetry.dependencies]
 python = ">=3.7"
-fastai = ">=1.0.57"
-ariadne = ">=0.6.0"
+fastai = ">=1.0.58"
+ariadne = ">=0.7.0"
 uvicorn = ">=0.8.6"
 celery = {extras = ["redis"], version = "^4.3.0"}
 redis = "^3.3.8"
-orjson = "^2.0.7"
+orjson = "^2.0.11"
 pyzmq = "^18.1.0"
 imagehash = ">=4.0"
 
