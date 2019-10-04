@@ -1,0 +1,198 @@
+.page-header-counts .anticon {
+  margin-right: 4px;
+}
+.taggers-count {
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.tagging {
+  background: #fefefe;
+  border-radius: 2px;
+  text-align: center;
+  border: 1px solid #eee;
+  // min-height: 500px;
+  position: relative;
+  font-size: 16px;
+  padding: 32px;
+  min-height: 492px;
+
+  img {
+    max-width: 92%;
+    max-height: 480px;
+    max-height: 380px;
+  }
+
+  &>.anticon-sync {
+    font-size: 4em;
+    color: #ccc;
+  }
+  .image-title {
+    word-break: break-all;
+  }
+  .image-fsize {
+    word-break: normal;
+  }
+
+  .item-index {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 8px;
+    line-height: 1;
+    background: #f9f9f9;
+    color: #888;
+    font-size: 12px;
+
+    strong {
+      font-size: 18px;
+      font-weight: 400;
+      color: #666;
+      display: inline-block;
+      min-width: 1.5em;
+    }
+  }
+
+  .image-fsize {
+    font-size: 14px;
+    margin-left: 20px;
+    color: #888;
+  }
+
+  .placeholder {
+    span {
+      font-size: 3em;
+      color: #eee;
+      line-height: 200px;
+    }
+
+    background: #f9f9f9;
+    width: 300px;
+    height: 200px;
+  }
+
+  .image-wrap {
+    width: 100%;
+    min-height: 338px;
+    position: relative;
+    padding: 32px 0;
+    margin-bottom: 32px;
+  }
+
+  .nav-buttons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+
+    button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      position: absolute;
+      color: #ccc;
+      font-size: 2.7em;
+      transform: scaleX(0.8);
+      line-height: 1.5;
+      width: 50%;
+      height: 100%;
+
+      &:active {
+        color: #666;
+
+        .anticon {
+          background: #fff;
+        }
+      }
+
+      &:focus,
+      &:hover {
+        color: #999;
+      }
+
+      .anticon {
+        padding: 6px 5px 0;
+      }
+    }
+
+    .prev {
+      text-align: left;
+      left: -60px;
+    }
+
+    .next {
+      text-align: right;
+      right: -60px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tagger {
+    padding: 0 12px;
+  }
+
+  .tagging {
+    .nav-buttons {
+      .prev .anticon {
+        margin-left: -8px;
+      }
+
+      .next .anticon {
+        margin-right: -8px;
+      }
+    }
+  }
+}
+
+.tag-options {
+  line-height: 56px;
+}
+
+.tag-buttons {
+  margin-right: 30px;
+
+  .ant-btn {
+    transition-property: width;
+  }
+
+  .ant-btn.active {
+    background: #f0f8ff;
+  }
+
+  .tag-idx {
+    display: inline-block;
+    margin: 0 5px 0 -5px;
+    color: #ccc;
+  }
+
+  .tag-text {
+    display: inline-block;
+    min-width: 1.3em;
+    text-align: center;
+  }
+}
+
+.action-buttons {
+
+  .anticon-check {
+    transform: translateX(-2px) translateY(1px);
+  }
+}
+
+
+.autosave-switch {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  font-size: 13px;
+  color: #aaa;
+
+  .ant-switch-small {
+    margin-top: -3px;
+  }
+
+  font-weight: 100;
+}

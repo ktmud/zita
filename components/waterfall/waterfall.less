@@ -1,0 +1,74 @@
+.waterfall {
+  min-height: 300px;
+  min-height: 65vh;
+  h2 {
+    margin: 0 0 0.2em;
+    font-size: 16px;
+    line-height: 2em;
+    color: #333;
+    font-weight: 600;
+    .ant-tag {
+      margin-left: 0.5em;
+      margin-top: -4px;
+      font-weight: 400;
+      border: 0;
+    }
+  }
+
+  a {
+    transition: all 0.15s ease-in-out;
+    display: block;
+    &:hover {
+      opacity: 0.4;
+      // transform: translateY(-6px);
+      z-index: 1;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    border: 2px solid #fff;
+    &.wrong-prediction {
+      border: 3px solid salmon;
+    }
+  }
+}
+
+.waterfall-strip {
+  padding: 4px;
+}
+
+.waterfall-item {
+  overflow: hidden;
+  max-width: 520px;
+  img {
+    width: 100%;
+    min-height: 48px;
+  }
+  &.with-tags {
+    margin-bottom: 4px;
+  }
+}
+
+
+h2.placeholder {
+  background: #f0f0f0;
+  width: 60%;
+  height: 1.2em;
+  margin: 16px 1px;
+}
+.animated-placeholder {
+  min-height: 90px;
+  background: #f0f0f0;
+  margin: 1px;
+}
+h2.placeholder, .animated-placeholder {
+  background: linear-gradient(90deg, #f2f2f2 25%, #e6e6e6 37%, #f2f2f2 63%);
+  background-size: 400% 100%;
+  animation: ant-skeleton-loading 1.4s ease infinite;
+}
+@keyframes ant-skeleton-loading {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

@@ -1,0 +1,70 @@
+.ant-layout-header {
+  padding: 0;
+  overflow: hidden;
+
+  .ant-menu {
+    line-height: 64px;
+    font-size: 16px;
+  }
+  .ant-menu.ant-menu-dark .ant-menu-item,
+  .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item {
+    transition: none;
+  }
+}
+
+.logo {
+  text-align: center;
+  float: left;
+  font-weight: 400;
+  margin-right: 64px;
+  margin-right: 5vw;
+
+  a,
+  a:hover,
+  a:visited {
+    background: rgba(255,255,255,0.1);
+    font-size: 20px;
+    font-weight: 700;
+    transition: none;
+    color: #fff;
+    padding: 0 2em;
+    min-width: 4em;
+    display: inline-block;
+    white-space: nowrap;
+    line-height: 62px;
+  }
+
+  .subtitle {
+    padding: 0 1em;
+  }
+
+  .logo-icon {
+    display: inline-block;
+    width: 1.5em;
+    text-align: left;
+  }
+}
+
+.subtitle {
+  color: #ccc;
+
+  @media screen and (max-width: 450px) {
+    & {
+      display: none;
+    }
+  }
+}
+
+.ant-layout-sider {
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 450px) {
+  header h1 {
+    float: none;
+    margin: 0 auto;
+  }
+  .ant-layout-header {
+    text-align: center;
+  }
+}

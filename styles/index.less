@@ -1,0 +1,58 @@
+@import "./antd-custom.less";
+
+body {
+  background: #f8f7f6;
+  font-family: 'PT Sans', Tahoma, Arial, sans-serif;
+}
+
+.ant-layout {
+  background: transparent;
+}
+
+.ant-layout-footer {
+  background: transparent;
+  color: #aaa;
+  font-weight: 100;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.ant-page-header {
+  // padding: 0 0px 16px;
+  background: #fff;
+  border-radius: 2px 2px 0 0;
+}
+.ant-page-header-heading-extra {
+  line-height: 32px;
+}
+
+.main {
+  background: #fff;
+  padding: 0 24px 24px;
+
+  .ant-col {
+    margin-bottom: 24px;
+  }
+}
+
+.initial-loading {
+  * {
+    transition: none !important;
+  }
+}
+
+@import "../components/fakeProgress.less";
+@import "../components/header.less";
+@import "../components/albumTabs.less";
+@import "../components/photoTooltip.less";
+@import "../components/photoTagsDiff.less";
+@import "../components/tagger/tagging.less";
+@import "../components/tagger/tagged.less";
+
+@import "../pages/test/test.less";
+@import "../pages/predict/predict.less";
+@import "../components/waterfall/waterfall.less";
+

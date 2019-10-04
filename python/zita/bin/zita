@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+import click
+from zita.app import create_app
+
+
+@click.group(create_app=create_app)
+def cli():
+    """This is a management script for the Superset application."""
+    pass
+
+
+if __name__ == '__main__':
+    cli()

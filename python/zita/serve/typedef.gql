@@ -1,0 +1,15 @@
+
+type Query {
+    prediction(photoId: String!): Prediction!
+    predictions(photoIds: [String!]!): [Prediction!]!
+}
+
+type Prediction {
+    id: String,
+    model: String
+    classes: [String!]
+    truth: [String] # True classes
+    tags: [String] # Predicted classes:       ["Good"]
+    preds: [Int]   # Predicted labels:        [0, 1, 0, ..]
+    probs: [Float] # Predicted probabilities: [0.1, 0.93, 0.31, ...]
+}

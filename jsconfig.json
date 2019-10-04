@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "allowSyntheticDefaultImports": true,
+    // "baseUrl": "./",
+    "paths": {},
+    "jsx": "react"
+  },
+  "exclude": ["dist", "node_modules"]
+}

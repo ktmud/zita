@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "zita"
+version = "0.0.1"
+description = "Zillion Image Tagging App"
+authors = ["Jesse Yang <hello@yjc.me>"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+fastai = ">=1.0.57"
+ariadne = ">=0.6.0"
+uvicorn = ">=0.8.6"
+celery = {extras = ["redis"], version = "^4.3.0"}
+redis = "^3.3.8"
+orjson = "^2.0.7"
+pyzmq = "^18.1.0"
+imagehash = ">=4.0"
+
+[tool.poetry.dev-dependencies]
+jupyter = ">=1.0.0"
+notebook = ">=6.0.1"
+environment_kernels = ">=1.1.1"
+
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "pip", path = "requirements.txt"}
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

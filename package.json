@@ -1,0 +1,63 @@
+{
+  "name": "zita",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zillow/zita.git"
+  },
+  "description": "Build your own end-to-end image classifier",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "env NODE_ENV=production next build",
+    "start": "env NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^3.0.1",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-less": "^1.0.1",
+    "antd": "^3.23.2",
+    "apollo-boost": "^0.4.3",
+    "apollo-client": "^2.6.3",
+    "apollo-server-micro": "^2.9.0",
+    "babel-plugin-import": "^1.12.1",
+    "cross-env": "^5.2.0",
+    "debug": "^4.1.1",
+    "fast-deep-equal": "^2.0.1",
+    "graphql": "^14.5.3",
+    "graphql-tag": "^2.10.1",
+    "ioredis": "^4.14.0",
+    "is-port-reachable": "^2.0.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "less": "^3.10.3",
+    "lodash.debounce": "^4.0.8",
+    "next": "^9.0.5",
+    "nookies": "^2.0.8",
+    "null-loader": "^3.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-hotkeys-hook": "^1.5.3",
+    "react-stack-grid": "^0.7.1",
+    "sanitize-filename": "^1.6.3",
+    "send": "^0.17.1",
+    "uid-safe": "^2.1.5",
+    "zeromq": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=10.16.0 <11",
+    "npm": "^6.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-esnext": "^4.0.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "prettier": "^1.18.2",
+    "webpack-ant-icon-loader": "^1.0.8"
+  }
+}
