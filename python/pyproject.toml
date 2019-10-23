@@ -9,6 +9,7 @@ repository = "https://github.com/ktmud/zita"
 [tool.poetry.dependencies]
 python = ">=3.7"
 fastai = ">=1.0.58"
+pillow = ">=6.2.1"
 ariadne = ">=0.7.0"
 uvicorn = ">=0.8.6"
 celery = {extras = ["redis"], version = "^4.3.0"}
