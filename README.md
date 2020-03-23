@@ -20,23 +20,29 @@ service within hours.
 
 ## Getting Started
 
-### Install
-
 We recommend install from source code:
 
 ```shell
-git clone http://github.com/zillow/zita.git
-cd zita
-npm install
-npm start
+git clone http://github.com/ktmud/zita.git
 
+# Install Python packages
 cd python
 pip3 install poetry
 poetry install
+
+# Enter the Python envrionment managed by Poetry
+poetry shell
+
+# Go back to Zita root
+cd ../
+npm install
+npm run dev
 ```
+
+This will start the tagging service first. You'd need to tag the photos in the `Label` tab, train models in a notebook, then be able to come back and view training predictions in the "Test" tab.
 
 For details, check out [SETUP.md](./SETUP.md).
 
 ## License
 
-Apache 2.0
+MIT

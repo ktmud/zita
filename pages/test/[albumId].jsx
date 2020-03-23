@@ -6,7 +6,7 @@ import Waterfall from "components/waterfall/waterfall";
 import { fetchgql, PAGE_SIZE } from "lib/client";
 import PredictPageHeader from "./header";
 
-function AlbumHome({ error, albums, album, modelOptions, currentModel }) {
+function AlbumHome({ error, albums, album = {}, modelOptions, currentModel }) {
   const router = useRouter();
   const { query } = router;
   const pgSize = parseInt(query.limit, 10) || PAGE_SIZE;

@@ -28,7 +28,7 @@ export default class RPCBackend {
     let reject = EMPTY_FUNC;
 
     // ptDebug("Connecting to RPC socket %s ...", this.url);
-    const socket = zmq.socket("req");
+    const socket = new zmq.Request();
     socket.connect(this.url);
 
     socket.on("message", res => {
