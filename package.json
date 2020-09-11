@@ -19,7 +19,7 @@
     "antd": "^3.23.2",
     "apollo-boost": "^0.4.3",
     "apollo-client": "^2.6.3",
-    "apollo-server-micro": "^2.9.0",
+    "apollo-server-micro": "^2.14.2",
     "babel-plugin-import": "^1.12.1",
     "cross-env": "^5.2.0",
     "debug": "^4.1.1",
