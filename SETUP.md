@@ -19,8 +19,8 @@ We recommend install everything from source code for easier future deployment:
 ```shell
 git clone http://github.com/zillow/zita.git
 cd zita
-npm install
-npm start
+yarn
+yarn start
 
 cd python
 pip3 install poetry
@@ -201,4 +201,3 @@ dokku config:set zita DOKKU_DEFAULT_CHECKS_WAIT=5
 ## Train and Deploy the Model
 
 Once that the web UI is setup, you can start tagging some ground truth.
-

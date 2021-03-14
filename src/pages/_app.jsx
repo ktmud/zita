@@ -6,14 +6,14 @@ import { AppContextProvider } from "components/context";
 import { parseCookies } from "nookies";
 import Header from "components/header";
 
-import "styles/index.less";
+import "../styles/index.scss";
 
 const { Footer, Content } = Layout;
 // const ptDebug = Debug("ZT.AlbumHome");
 
 class MyApp extends App {
   state = {
-    isInitial: true
+    isInitial: true,
   };
 
   componentDidMount() {
@@ -34,7 +34,7 @@ class MyApp extends App {
     // tagger context
     const ctx = {
       cookies: pageProps.cookies || parseCookies(),
-      tagOptions: pageProps.tagOptions
+      tagOptions: pageProps.tagOptions,
     };
     let { pageName } = Component;
     if (typeof pageName === "function") {

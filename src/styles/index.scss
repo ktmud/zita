@@ -1,4 +1,4 @@
-@import "./antd-custom.less";
+@import 'antd/dist/antd.css';
 
 body {
   background: #f8f7f6;
@@ -44,15 +44,15 @@ body {
   }
 }
 
-@import "../components/fakeProgress.less";
-@import "../components/header.less";
-@import "../components/albumTabs.less";
-@import "../components/photoTooltip.less";
-@import "../components/photoTagsDiff.less";
-@import "../components/tagger/tagging.less";
-@import "../components/tagger/tagged.less";
+@import "../components/fakeProgress.scss";
+@import "../components/header.scss";
+@import "../components/albumTabs.scss";
+@import "../components/photoTooltip.scss";
+@import "../components/photoTagsDiff.scss";
+@import "../components/tagger/tagging.scss";
+@import "../components/tagger/tagged.scss";
 
-@import "../pages/test/test.less";
-@import "../pages/predict/predict.less";
-@import "../components/waterfall/waterfall.less";
+@import "../pages/test/test.scss";
+@import "../pages/predict/predict.scss";
+@import "../components/waterfall/waterfall.scss";
 

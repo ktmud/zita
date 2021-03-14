@@ -2,14 +2,13 @@ import React from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 import { Tabs } from "antd";
 import CounterTag from "components/tagger/countertag";
-import "./albumTabs.less";
 
 const { TabPane } = Tabs;
 
 function AlbumTabs({ albums, album, selectAlbum, section = "album" }) {
   // a map for getting album by id, also add `idx` to each album at the same time
 
-  const selectAlbumByIdx = i => {
+  const selectAlbumByIdx = (i) => {
     let idx = i;
     if (idx >= albums.length) {
       idx -= albums.length;
@@ -36,7 +35,7 @@ function AlbumTabs({ albums, album, selectAlbum, section = "album" }) {
     [album.idx]
   );
 
-  const AlbumTab = a => {
+  const AlbumTab = (a) => {
     const alb = albums[a.idx] || a; // use cache when possible
     return (
       <TabPane
@@ -45,7 +44,7 @@ function AlbumTabs({ albums, album, selectAlbum, section = "album" }) {
           <a
             href={`/${section}/${alb.id}`}
             title={`${alb.taggedPhotos} of ${alb.totalPhotos} photos tagged`}
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             {alb.id}
             <CounterTag
