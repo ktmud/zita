@@ -5,7 +5,7 @@ import { downloadFilename } from "lib/client";
 const ptDebug = Debug("ZT.export");
 
 /**
- * Return the photo JPEG response
+ * Export photo tags as csv or json.
  */
 export default (req, res) => {
   const {

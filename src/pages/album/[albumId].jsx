@@ -22,7 +22,7 @@ function AlbumHome({ albums, start, tagOptions }) {
     return cache;
   }, [albums]);
 
-  const selectAlbum = newAlbumId => {
+  const selectAlbum = (newAlbumId) => {
     // switch to the new album
     const alb = albumsCache[newAlbumId];
     const href = `/album/[albumId]`;
@@ -47,7 +47,7 @@ function AlbumHome({ albums, start, tagOptions }) {
 
   // list all tagged photos if haven't been processed
   album.tagged = useMemo(
-    () => photos && photos.filter(x => x && x.tags.length > 0),
+    () => photos && photos.filter((x) => x && x.tags.length > 0),
     [photos]
   );
   if (album.taggedPhotos > album.total) {
@@ -70,8 +70,8 @@ function AlbumHome({ albums, start, tagOptions }) {
           "totalPhotos",
           "taggedPhotos",
           "photos",
-          "tagged"
-        ].forEach(key => {
+          "tagged",
+        ].forEach((key) => {
           if (key in alb && alb[key] !== album[key]) {
             // console.log(key, alb[key]);
             album[key] = alb[key];
@@ -85,7 +85,7 @@ function AlbumHome({ albums, start, tagOptions }) {
       }
       // trigger a renrender
       if (hasChanges) {
-        setStateTrigger(prev => !prev);
+        setStateTrigger((prev) => !prev);
       }
     },
     [album, photos, setStateTrigger]
@@ -103,7 +103,7 @@ function AlbumHome({ albums, start, tagOptions }) {
   );
 }
 
-AlbumHome.getInitialProps = async ctx => {
+AlbumHome.getInitialProps = async (ctx) => {
   const { query, res } = ctx;
   const currentAlbumId = query.albumId;
   // initial current photo, 1 based index
@@ -134,11 +134,11 @@ AlbumHome.getInitialProps = async ctx => {
 
   // if could not find current album from albums, redirect to home page
   // home will find next available album or show 404
-  if (!data.albums.find(x => x.id === currentAlbumId)) {
+  if (!data.albums.find((x) => x.id === currentAlbumId)) {
     const loc = "/";
     if (res) {
       res.writeHead(302, {
-        Location: loc
+        Location: loc,
       });
       res.end();
     } else {
@@ -161,9 +161,9 @@ AlbumHome.getInitialProps = async ctx => {
   return {
     start: data.start,
     albums: data.albums,
-    tagOptions: data.tagOptions
+    tagOptions: data.tagOptions,
   };
 };
 
-AlbumHome.pageName = "Label Ground Truth";
+AlbumHome.pageName = "Label Truth";
 export default AlbumHome;
